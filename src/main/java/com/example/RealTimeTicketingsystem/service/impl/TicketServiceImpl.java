@@ -6,6 +6,8 @@ import com.example.RealTimeTicketingsystem.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service//indicates class is a service component
 public class TicketServiceImpl implements TicketService {
 
@@ -15,6 +17,11 @@ public class TicketServiceImpl implements TicketService {
     @Override
     public Ticket createTicket(Ticket ticket){
         return ticketRepository.save(ticket);
+    }
+
+    @Override
+    public List<Ticket>getAllTickets(){
+        return ticketRepository.findAll();
     }
 
     @Override

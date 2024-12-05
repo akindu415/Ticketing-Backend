@@ -3,7 +3,6 @@ package com.example.RealTimeTicketingsystem.service.impl;
 import com.example.RealTimeTicketingsystem.model.User;
 import com.example.RealTimeTicketingsystem.repository.UserRepository;
 import com.example.RealTimeTicketingsystem.service.UserService;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
